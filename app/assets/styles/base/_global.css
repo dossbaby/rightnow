@@ -1,0 +1,17 @@
+body {
+    font-family: '나눔 고딕', 'Nanum Gothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+    color: $mainColor;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $secondColor;
+}
