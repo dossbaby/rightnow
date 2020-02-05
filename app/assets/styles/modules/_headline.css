@@ -20,7 +20,7 @@
   }
 
   &--secondcolor {
-    color: $secondColor;
+    color: $thirdColor;
   }
 
   &--smallersize {
