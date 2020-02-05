@@ -1,13 +1,33 @@
 .page-section {
+  padding: 1.5rem 0;
 
-    padding: 1.5rem 0;
+  @mixin atMedium {
+    padding: 4.5rem 0;
+  }
+
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
 
     @mixin atMedium {
-        padding: 4.5rem 0;
+      padding-bottom: 4.5rem;
     }
+  }
 
-    &--bgcolor {
-        background-color: $mainColor;
-        color: $white;
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+
+    @mixin atLarge {
+      padding-bottom: 4.5rem;
     }
+  }
+
+  &--bgcolor {
+    background-color: $mainColor;
+    color: $white;
+  }
+
+  &--testimonials {
+    background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+    background-size: cover;
+  }
 }

@@ -6,12 +6,24 @@
   margin-bottom: 1.5em;
 
   @mixin atSmall {
+    font-size: 2.3rem;
+  }
+
+  @mixin atMedium {
+    font-size: 2.5rem;
+  }
+
+  @mixin atLarge {
     font-size: 2.8rem;
     margin-bottom: 1.3em;
   }
 
   strong {
     font-weight: 500;
+  }
+
+  &--altcolor {
+    color: $mainColor;
   }
 
   &__icon {
@@ -21,6 +33,8 @@
     margin-bottom: 0.8rem;
 
     @mixin atSmall {
+      position: relative;
+      top: 15px;
       margin-right: 0.5rem;
       margin-left: 0;
       display: inline-block;

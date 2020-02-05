@@ -23,7 +23,11 @@
     margin-top: 0.7em;
     text-align: center;
 
-    @mixin atSmall {
+    @mixin atMedium {
+      font-size: 1.7rem;
+    }
+
+    @mixin atLarge {
       margin-top: 1em;
       font-size: 1.875rem;
       text-align: left;

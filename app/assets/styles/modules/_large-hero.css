@@ -26,7 +26,7 @@
     }
 
     @mixin atMedium {
-      font-size: 3.0rem;
+      font-size: 3rem;
     }
 
     @mixin atLarge {
@@ -61,18 +61,18 @@
     font-size: 1.1rem;
     color: $white;
     font-weight: 100;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
-  
-  @mixin atSmall {
-    font-size: 1.2rem;
-  }
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
 
-  @mixin atMedium {
-    font-size: 1.3rem;
-  }
+    @mixin atSmall {
+      font-size: 1.1rem;
+    }
 
-  @mixin atLarge {
-    font-size: 1.4rem;
+    @mixin atMedium {
+      font-size: 1.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.2rem;
+    }
   }
-}
 }
