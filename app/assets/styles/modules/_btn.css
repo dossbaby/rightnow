@@ -1,30 +1,30 @@
 .btn {
-    background-color: $secondColor;
+  background-color: $secondColor;
+  color: $white;
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+  display: inline-block;
+  border-radius: 0.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  &--crystal {
+    background-color: $thirdColor;
     color: $white;
-    text-decoration: none;
-    padding: 1.0rem 1.2rem;
-    display: inline-block;
-    border-radius: 0.1rem;
-    border: 1px solid rgba(255,255,255,0.2);
+  }
 
-    &--crystal {
-        background-color: $thirdColor;
-        color: $white;
+  &--large {
+    font-size: 1rem;
+
+    @mixin atSmall {
+      font-size: 1.1rem;
     }
 
-    &--large {
-        font-size: 1.0rem;
-
-         @mixin atSmall {
-            font-size: 1.1rem;
-          }
-      
-          @mixin atMedium {
-            font-size: 1.2rem;
-          }
-      
-          @mixin atLarge {
-            font-size: 1.3rem;
-          }
+    @mixin atMedium {
+      font-size: 1.2rem;
     }
+
+    @mixin atLarge {
+      font-size: 1.3rem;
+    }
+  }
 }

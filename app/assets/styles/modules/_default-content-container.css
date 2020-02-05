@@ -1,26 +1,24 @@
 .default-content-container {
+  p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin: 1.5rem 0;
 
-    p {
-        line-height: 1.7;
-        font-size: 1.1rem;
-        font-weight: 100;
-        margin: 1.5rem 0;
-                  
-          @mixin atSmall {
-            font-size: 1.2rem;
-          }
-        
-          @mixin atMedium {
-            font-size: 1.3rem;
-          }
-        
-          @mixin atLarge {
-            font-size: 1.4rem;
-          }
+    @mixin atSmall {
+      font-size: 1.2rem;
     }
 
-    p a {
-        font-weight: 700;
+    @mixin atMedium {
+      font-size: 1.3rem;
     }
 
+    @mixin atLarge {
+      font-size: 1.4rem;
+    }
+  }
+
+  p a {
+    font-weight: 700;
+  }
 }
