@@ -1,0 +1,60 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($white, 0.96);
+  z-index: 5;
+  display: flex;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__inner {
+    flex: 1;
+    margin: auto;
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 300;
+
+    @mixin atSmall {
+      font-size: 1.1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: $secondColor;
+    transform: scaleX(1.25);
+    transform-origin: 100% 0;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
