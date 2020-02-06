@@ -66,10 +66,10 @@ class Modal {
       
       <div class="client-area">
         <div class="wrapper wrapper--medium">
-          <h2 class="section-title section-title--newcolor section-title--small-title">SVIP 비밀 코드</h2>
+          <h2 class="section-title section-title--newcolor section-title--small-title">2020 최신 여행지 가이드 v2.0</h2>
           <form class="client-area__form" action="">
-            <input class="client-area__input" type="text" placeholder="특급 비밀 번호 입력">
-            <button class="btn btn--svip">현금 인출</button>
+            <input class="client-area__input" type="text" placeholder="초대 비밀번호 입력">
+            <button class="btn btn--svip">겟잇 롸잇나우</button>
           </form>
           <div class="client-area__content-area"></div>
         </div>
