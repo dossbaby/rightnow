@@ -42,5 +42,16 @@
     font-weight: 300;
     padding: 17px 0;
     display: block;
+
+    @mixin atMedium {
+      .site-header--dark & {
+        color: $white;
+      }
+
+      &.is-current-link {
+        color: $mainColor;
+        font-weight: 400;
+      }
+    }
   }
 }
