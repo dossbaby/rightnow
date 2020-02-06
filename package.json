@@ -6,6 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
     "postcss-hexrgba": "^2.0.0",
     "postcss-mixins": "^6.2.3",
