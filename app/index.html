@@ -95,9 +95,9 @@
           <strong>올해는 꼭</strong> 본인과의 시간을 갖으세요!
         </h3>
         <div class="wrapper wrapper--medium wrapper--b-margin">
-          <img
+          <img class="lazyload"
             sizes="(min-width: 970px) 976px, 100vw"
-            srcset="
+            data-srcset="
               assets/images/first-trip-low-res.jpg  565w,
               assets/images/first-trip.jpg          976w,
               assets/images/first-trip-hi-dpi.jpg  1952w
@@ -112,7 +112,7 @@
             <picture>
               <source
                 sizes="404px"
-                srcset="
+                data-srcset="
                   assets/images/our-start.jpg        404w,
                   assets/images/our-start-hi-dpi.jpg 808w
                 "
@@ -120,14 +120,14 @@
               />
               <source
                 sizes="320px"
-                srcset="
+                data-srcset="
                   assets/images/our-start-portrait.jpg        382w,
                   assets/images/our-start-portrait-hi-dpi.jpg 764w
                 "
                 media="(min-width: 800px)"
               />
-              <img
-                srcset="
+              <img class="lazyload"
+                data-srcset="
                   assets/images/our-start-landscape.jpg         800w,
                   assets/images/our-start-landscape-hi-dpi.jpg 1600w
                 "
@@ -217,14 +217,14 @@
       </div>
     </div>
 
-    <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials" data-matching-link="#testimonials-anchor">
+    <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials lazyload" data-bg="assets/images/testimonials-bg.jpg" data-matching-link="#testimonials-anchor">
       <div class="wrapper wrapper--no-padding-until-large">
         <h2 class="section-title section-title--altcolor"><img class="section-title__icon" src="assets/images/icons/comment.svg" /> 롸잇나우 <strong>고객 여행 후기</strong></h2>
         <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding default-content-container">
           <div class="row__large-4">
             <div class="testimonial">
               <div class="testimonial__photo">
-               <img sizes="160px" srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="빌 게이쮸"/>
+               <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="빌 게이쮸"/>
              </div>
               <h3 class="testimonial__title">빌 게이쮸</h3>
               <h4 class="testimonial__subtitle">롸잇나우 1인자</h4>
@@ -238,7 +238,7 @@
           <div class="row__large-4">
             <div class="testimonial">
               <div class="testimonial__photo">
-                <img srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="아리아냥 그량데"/>
+                <img class="lazyload" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="아리아냥 그량데"/>
               </div>
               <h3 class="testimonial__title">아리아냥 그량데</h3 class="testimonial__title">
               <h4 class="testimonial__subtitle">롸잇나우 여신</h4 class="testimonial__subtitle">
@@ -252,7 +252,7 @@
         <div class="row__large-4">
           <div class="testimonial testimonial--last">
             <div class="testimonial__photo">
-              <img srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="도날드 트람푸"/>
+              <img class="lazyload" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="도날드 트람푸"/>
           </div>  
             <h3 class="testimonial__title">도날드 트람푸</h3 class="testimonial__title">
             <h4 class="testimonial__subtitle" >롸잇나우 대통령</h4 class="testimonial__subtitle" >
