@@ -1,0 +1,129 @@
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  transition: background-color 0.15s ease-in-out;
+
+  &--is-expanded {
+    background-color: rgba($white, 0.99);
+  }
+
+  @mixin atMedium {
+    background-color: $white;
+  }
+
+  &__btn-container {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $thirdColor;
+    padding: 16px 32px;
+    border-radius: 0 0 0.1rem 0.1rem;
+
+    @mixin atMedium {
+      left: auto;
+      padding: 24px 32px;
+    }
+  }
+
+  &__logo-text {
+    color: $white;
+    margin: 0;
+    font-size: 1.5rem;
+
+    @mixin atMedium {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__menu-content {
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    z-index: -10;
+    text-align: left;
+    padding-top: 80px;
+
+    @mixin atMedium {
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: $secondColor;
+      transform-origin: 0 0;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: $secondColor;
+      transform-origin: 0 50%;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: $secondColor;
+      transform-origin: 0 100%;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+}

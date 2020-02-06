@@ -6,13 +6,25 @@
 
   &__text {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 200;
 
     @mixin atMedium {
-      display: inline;
-      margin-bottom: 0;
+      display: block;
       margin-right: 1.2rem;
     }
+  }
+
+  &__text--narrow {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  &__text--subtext {
+    display: block;
+    margin-bottom: 1rem;
+    color: rgba($white, 0.74);
+    font-size: 92%;
+    line-height: 1.5;
   }
 }

@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
+    "postcss-hexrgba": "^2.0.0",
     "postcss-mixins": "^6.2.3",
     "webpack-dev-server": "^3.10.2"
   },

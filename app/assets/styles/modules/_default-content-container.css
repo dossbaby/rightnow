@@ -21,4 +21,53 @@
   p a {
     font-weight: 700;
   }
+
+  &--list-title {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+    color: $secondColor;
+
+    @mixin atSmall {
+      font-size: 1.1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.2rem;
+    }
+  }
+
+  &--list {
+    margin: 0;
+    padding: 0;
+
+    li:before {
+      content: "• ";
+      color: $secondColor;
+    }
+
+    li {
+      font-size: 1.1rem;
+      font-weight: 100;
+      line-height: 1.7;
+      list-style: none;
+
+      @mixin atSmall {
+        font-size: 1.1rem;
+      }
+
+      @mixin atMedium {
+        font-size: 1.2rem;
+      }
+
+      @mixin atLarge {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
