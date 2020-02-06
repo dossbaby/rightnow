@@ -18,5 +18,6 @@
 
   &__error {
     color: $secondColor;
+    text-align: center;
   }
 }
