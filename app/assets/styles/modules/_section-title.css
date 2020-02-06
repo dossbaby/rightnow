@@ -54,6 +54,13 @@
     color: $secondColor;
   }
 
+  &--small-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+  }
+
   &--less-margin {
     margin-bottom: 1.3rem;
     margin-top: 0;

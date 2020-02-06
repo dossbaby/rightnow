@@ -7,6 +7,12 @@
   border-radius: 0.1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 
+  &:hover {
+    color: $secondColor;
+    background-color: $mainColor;
+    cursor: pointer;
+  }
+
   &--menu-b-margin {
     margin-bottom: 1rem;
 
@@ -15,9 +21,20 @@
     }
   }
 
+  &--svip:hover {
+    color: $secondColor;
+    background-color: $mainColor;
+    cursor: pointer;
+  }
+
   &--crystal {
     background-color: $thirdColor;
     color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $mainColor;
+    }
   }
 
   &--large {

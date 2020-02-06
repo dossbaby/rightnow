@@ -1,0 +1,22 @@
+.client-area {
+  padding: 25px;
+
+  &__form {
+    display: flex;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  &__input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+
+  &__error {
+    color: $secondColor;
+  }
+}
