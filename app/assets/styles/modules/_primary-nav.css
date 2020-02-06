@@ -49,8 +49,12 @@
       }
 
       &.is-current-link {
-        color: $mainColor;
         font-weight: 400;
+        background-color: $white;
+        color: $mainColor;
+        border-radius: 0.2rem;
+        display: block;
+        padding: 17px;
       }
     }
   }
