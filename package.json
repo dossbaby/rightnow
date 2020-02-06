@@ -1,5 +1,5 @@
 {
-  "name": "travel-agency",
+  "name": "rightnow",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -36,14 +36,14 @@
   "main": "webpack.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dossbaby/travel-agency.git"
+    "url": "git+https://github.com/dossbaby/rightnow.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dossbaby/travel-agency/issues"
+    "url": "https://github.com/dossbaby/rightnow/issues"
   },
-  "homepage": "https://github.com/dossbaby/travel-agency#readme",
+  "homepage": "https://github.com/dossbaby/rightnow#readme",
   "description": ""
 }
